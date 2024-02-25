@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('cloneing') {
             steps {
-                git branch: 'main', credentialsId: 'SonarQube', url: 'https://github.com/Zouaoui-Maissa/4TWIN6-G5-Foyer.git'
+                git branch: 'main', credentialsId: 'Test', url: 'https://github.com/Zouaoui-Maissa/4TWIN6-G5-Foyer.git'
             }
         }
         stage('Maven Clean') {
