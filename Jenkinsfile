@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('cloneing') {
             steps {
-                git branch: 'main', credentialsId: 'usertoken', url: 'https://github.com/yassinbnsalah/BackendSpring.git'
+                git branch: 'main', credentialsId: 'SonarQube', url: 'https://github.com/Zouaoui-Maissa/4TWIN6-G5-Foyer.git'
             }
         }
         stage('Maven Clean') {
@@ -26,7 +26,7 @@ pipeline {
         stage('MVN SONARQUBE') {
             steps {
                 script {
-                    sh 'mvn sonar:sonar -Dsonar.login=990b159dd4a19ae5b908fb261a7efaca4e6f55c2'
+                    sh 'mvn sonar:sonar -Dsonar.login=bdcb7668f621299887922551582b00b84f9e9c94'
                 }
             }
         }
