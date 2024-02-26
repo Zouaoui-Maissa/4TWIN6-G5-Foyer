@@ -2,13 +2,17 @@ package tn.esprit.brogram.backend.RestController;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import tn.esprit.brogram.backend.DAO.Entities.Chamber;
+import tn.esprit.brogram.backend.DAO.Entities.Image;
 import tn.esprit.brogram.backend.DAO.Entities.Reservation;
 import tn.esprit.brogram.backend.DAO.Entities.TypeChamber;
 import tn.esprit.brogram.backend.DAO.Repositories.ChamberRepository;
+import tn.esprit.brogram.backend.DAO.Repositories.ImageRepository;
 import tn.esprit.brogram.backend.Services.IChamberService;
+
 
 
 import java.io.IOException;
