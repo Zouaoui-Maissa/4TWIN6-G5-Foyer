@@ -96,6 +96,7 @@ public class UserRestController {
         if (user.getId() == 0) {
             throw new UserNotFoundException("User not found by the provided email");
         } else {
+            
             String subject = "Rest your password";
             String body = "Click on the lick below to rest your password \n http://localhost:4200/reset-password/" + email;
             emailService.sendMail(email, subject, body);
